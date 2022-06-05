@@ -1,0 +1,115 @@
+:root {
+  --btn-color: #2a7ae4;
+  --font: sans-serif;
+}
+
+/*
+* Resets
+*/
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: var(--font);
+}
+
+*,
+*::before,
+*::after {
+  margin: inherit;
+  padding: inherit;
+  box-sizing: inherit;
+}
+
+/**
+* * Estilos Generales
+**/
+
+/*
+* Pantalla de inicio
+*/
+.home-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 998;
+  background-color: rgba(225, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.home-screen * {
+  margin-bottom: 2rem;
+}
+
+.home-screen button {
+  padding: 1rem;
+  background-color: var(--btn-color);
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.home-screen button:hover {
+  opacity: 0.8;
+}
+
+.home-screen .words {
+  display: flex;
+  flex-direction: column;
+}
+
+.words * {
+  margin-bottom: 0.5rem;
+}
+
+.words button {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.words input {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: thin solid var(--btn-color);
+}
+
+.words input:focus {
+  outline: none;
+}
+
+.words input::placeholder {
+  color: var(--btn-color);
+}
+
+/*
+* Canvas
+*/
+
+.canvas-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+* Utilitarias
+*/
+
+.none {
+  display: none;
+}
+
+.play {
+  z-index: 999;
+}
