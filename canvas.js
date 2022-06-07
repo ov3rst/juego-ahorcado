@@ -156,7 +156,7 @@ const winner = () => {
 };
 
 const eventosKeyup = (e) => {
-  const key = /[abcdefghijklmnñopqrstuvwxyz]/gi;
+  const key = /[a-zA-ZñÑ]/gi;
 
   if (e.key.length === 1 && key.test(e.key)) {
     letraPulsada(e.key);
